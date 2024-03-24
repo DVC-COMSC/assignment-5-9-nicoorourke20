@@ -35,6 +35,7 @@ jobs:
         expected-output: "[\\w, \\W]*-100[\\w,\\W]*-200[\\w,\\W]*-1000[\\w,\\W]*"
         comparison-method: regex
         timeout: 10
+        max-score: 10
     - name: IO1
       id: io1
       uses: education/autograding-io-grader@v1
@@ -45,6 +46,7 @@ jobs:
         expected-output: "[\\w, \\W]*5[\\w,\\W]*4[\\w,\\W]*3[\\w,\\W]*2[\\w,\\W]*1[\\w,\\W]*"
         comparison-method: regex
         timeout: 10
+        max-score: 10
     - name: Autograding Reporter
       uses: education/autograding-grading-reporter@v1
       env:
